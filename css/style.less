@@ -1,6 +1,57 @@
-/*font-family: 'Kelly Slab', cursive;*/
 /* переменные */
-@color_fon:rgba(163, 20, 20, 0.74);
+@color_red_main:#871815;
+@bg_transparent_red:rgba(163, 20, 20, 0.79);
+@font_slab:'Kelly Slab', cursive;
+
+/* mixins*/
+.bg_transparent_white(@opacity){
+  background: rgba(255, 255, 255, @opacity);
+}
+.text-shadow(@x: -1px, @y: -1px, @radius: 0px, @color: #000){
+  -webkit-text-shadow: @arguments;
+  -moz-text-shadow: @arguments;
+  text-shadow: @arguments;
+};
+
+.parallax-window {
+  min-height: 100vh;
+  background: transparent;
+  position: relative;
+}
+.vcenter {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
 body{
-  background: #000;
+  color: #fff;
+}
+/* header*/
+.head_block{
+  padding-top: 20px;
+}
+.phone{
+  font-family: @font_slab;
+  font-size: 20px;
+  font-weight: bold;
+  .text-shadow();
+}
+.logo_phone{
+  img{
+    float: right;
+  }
+}
+.h_block{
+  h1{
+    font-size: 60px;
+    .text-shadow(1px; 1px; 10px; #000);
+  }
+  h2{
+    font-size: 45px;
+    .text-shadow(1px; 1px; 10px; #000);
+  }
+  h4{
+    font-size: 20px;
+    .text-shadow(1px; 1px; 10px; #000);
+  }
 }

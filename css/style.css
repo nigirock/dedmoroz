@@ -1,5 +1,48 @@
-/*font-family: 'Kelly Slab', cursive;*/
 /* переменные */
+/* mixins*/
+.parallax-window {
+  min-height: 100vh;
+  background: transparent;
+  position: relative;
+}
+.vcenter {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
 body {
-  background: #000;
+  color: #fff;
+}
+/* header*/
+.head_block {
+  padding-top: 20px;
+}
+.phone {
+  font-family: 'Kelly Slab', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-text-shadow: -1px -1px 0px #000;
+  -moz-text-shadow: -1px -1px 0px #000;
+  text-shadow: -1px -1px 0px #000;
+}
+.logo_phone img {
+  float: right;
+}
+.h_block h1 {
+  font-size: 60px;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
+}
+.h_block h2 {
+  font-size: 45px;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
+}
+.h_block h4 {
+  font-size: 20px;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
 }
