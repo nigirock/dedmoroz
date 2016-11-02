@@ -11,7 +11,10 @@
   -webkit-text-shadow: @arguments;
   -moz-text-shadow: @arguments;
   text-shadow: @arguments;
-};
+}
+.border(@px: 1px, @width: solid, @color: #fff){
+  border: @arguments;
+}
 
 .parallax-window {
   min-height: 100vh;
@@ -22,13 +25,14 @@
   display: inline-block;
   float: none;
   vertical-align: middle;
+  padding: 0;
 }
 body{
   color: #fff;
 }
 /* header*/
 .head_block{
-  padding-top: 20px;
+  padding: 45px 0;
 }
 .phone{
   font-family: @font_slab;
@@ -53,5 +57,38 @@ body{
   h4{
     font-size: 20px;
     .text-shadow(1px; 1px; 10px; #000);
+  }
+}
+form{
+  .border(10px);
+  background: @bg_transparent_red;
+  font-family: @font_slab;
+  .form_block_h{
+    padding: 20px 0;
+    h2{
+      font-size: 38px;
+      .text-shadow(2px; 5px; 1px; #000);
+    }
+    h4{
+      .text-shadow(2px; 5px; 1px; #000);
+    }
+  }
+  .btn-default{
+    font-weight: bold;
+    color: #000;
+  }
+  .soc_seti{
+    .btn{
+      padding: 0;
+      &:hover{transform: scale(1.1)}
+    }
+  }
+}
+
+.clients{
+  background: @bg_transparent_red;
+  padding: 45px 0;
+  h2{
+    float: none;
   }
 }

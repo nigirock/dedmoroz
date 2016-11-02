@@ -9,40 +9,77 @@
   display: inline-block;
   float: none;
   vertical-align: middle;
+  padding: 0;
 }
 body {
   color: #fff;
 }
 /* header*/
 .head_block {
-  padding-top: 20px;
+  padding: 45px 0;
 }
 .phone {
   font-family: 'Kelly Slab', cursive;
   font-size: 20px;
   font-weight: bold;
-  -webkit-text-shadow: -1px -1px 0px #000;
-  -moz-text-shadow: -1px -1px 0px #000;
-  text-shadow: -1px -1px 0px #000;
+  -webkit-text-shadow: -1px -1px 0px #000000;
+  -moz-text-shadow: -1px -1px 0px #000000;
+  text-shadow: -1px -1px 0px #000000;
 }
 .logo_phone img {
   float: right;
 }
 .h_block h1 {
   font-size: 60px;
-  -webkit-text-shadow: 1px 1px 10px #000;
-  -moz-text-shadow: 1px 1px 10px #000;
-  text-shadow: 1px 1px 10px #000;
+  -webkit-text-shadow: 1px 1px 10px #000000;
+  -moz-text-shadow: 1px 1px 10px #000000;
+  text-shadow: 1px 1px 10px #000000;
 }
 .h_block h2 {
   font-size: 45px;
-  -webkit-text-shadow: 1px 1px 10px #000;
-  -moz-text-shadow: 1px 1px 10px #000;
-  text-shadow: 1px 1px 10px #000;
+  -webkit-text-shadow: 1px 1px 10px #000000;
+  -moz-text-shadow: 1px 1px 10px #000000;
+  text-shadow: 1px 1px 10px #000000;
 }
 .h_block h4 {
   font-size: 20px;
-  -webkit-text-shadow: 1px 1px 10px #000;
-  -moz-text-shadow: 1px 1px 10px #000;
-  text-shadow: 1px 1px 10px #000;
+  -webkit-text-shadow: 1px 1px 10px #000000;
+  -moz-text-shadow: 1px 1px 10px #000000;
+  text-shadow: 1px 1px 10px #000000;
+}
+form {
+  border: 10px solid #ffffff;
+  background: rgba(163, 20, 20, 0.79);
+  font-family: 'Kelly Slab', cursive;
+}
+form .form_block_h {
+  padding: 20px 0;
+}
+form .form_block_h h2 {
+  font-size: 38px;
+  -webkit-text-shadow: 2px 5px 1px #000000;
+  -moz-text-shadow: 2px 5px 1px #000000;
+  text-shadow: 2px 5px 1px #000000;
+}
+form .form_block_h h4 {
+  -webkit-text-shadow: 2px 5px 1px #000000;
+  -moz-text-shadow: 2px 5px 1px #000000;
+  text-shadow: 2px 5px 1px #000000;
+}
+form .btn-default {
+  font-weight: bold;
+  color: #000;
+}
+form .soc_seti .btn {
+  padding: 0;
+}
+form .soc_seti .btn:hover {
+  transform: scale(1.1);
+}
+.clients {
+  background: rgba(163, 20, 20, 0.79);
+  padding: 45px 0;
+}
+.clients h2 {
+  float: none;
 }
