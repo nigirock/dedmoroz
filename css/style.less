@@ -2,6 +2,7 @@
 @color_red_main:#871815;
 @bg_transparent_red:rgba(163, 20, 20, 0.79);
 @font_slab:'Kelly Slab', cursive;
+@font_jura:'Jura', sans-serif;
 
 /* mixins*/
 .bg_transparent_white(@opacity){
@@ -25,6 +26,9 @@
   display: inline-block;
   float: none;
   vertical-align: middle;
+  padding: 0;
+}
+.container-fluid{
   padding: 0;
 }
 body{
@@ -84,11 +88,80 @@ form{
     }
   }
 }
-
+/* клиенты */
 .clients{
-  background: @bg_transparent_red;
   padding: 45px 0;
+  background: url("../img/fons/ded_moroz_smotrit.jpg") center;
+  background-size: cover;
+  position: relative;
+  &:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    background-color: @bg_transparent_red;
+  }
   h2{
     float: none;
+  }
+  .clients_inner{
+    font-family: @font_slab;
+    .img_block_clients{
+      padding-right: 0;
+      padding-top: 10px;
+    }
+    h4{
+      font-size: 20px;
+      .text-shadow(2px; 2px; 1px; #000);
+    }
+    p{
+      font-size: 17px;
+      display: block;
+      padding-right: 20px;
+      .text-shadow(2px; 2px; 1px; #000);
+    }
+  }
+}
+/* наши услуги */
+.uslugi{
+  padding-bottom: 40px;
+  .uslugi_blocks{
+    .border(10px;solid;@color_red_main);
+    min-height: 50vh;
+  }
+}
+/* about */
+.about{
+  padding: 45px 0;
+  background: url("../img/fons/ded_moroz_truba.jpg");
+  background-size: cover;
+  position: relative;
+  &:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    background-color: @bg_transparent_red;
+  }
+  h2{
+    font-family: @font_jura;
+    font-size: 65px;
+  }
+  .abs_text{
+    position: absolute;
+    top:21%;
+    left: 37%;
+    font-size: 25px;
+    &.shapka2{
+      font-size: 17px;
+      top:33%;
+      left: 39%;
+    }
   }
 }
