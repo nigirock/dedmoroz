@@ -25,33 +25,33 @@ body {
   font-family: 'Kelly Slab', cursive;
   font-size: 20px;
   font-weight: bold;
-  -webkit-text-shadow: -1px -1px 0px #000;
-  -moz-text-shadow: -1px -1px 0px #000;
-  text-shadow: -1px -1px 0px #000;
+  -webkit-text-shadow: -1px -1px 0px #000000;
+  -moz-text-shadow: -1px -1px 0px #000000;
+  text-shadow: -1px -1px 0px #000000;
 }
 .logo_phone img {
   float: right;
 }
 .h_block h1 {
   font-size: 60px;
-  -webkit-text-shadow: 1px 1px 10px #000;
-  -moz-text-shadow: 1px 1px 10px #000;
-  text-shadow: 1px 1px 10px #000;
+  -webkit-text-shadow: 1px 1px 10px #000000;
+  -moz-text-shadow: 1px 1px 10px #000000;
+  text-shadow: 1px 1px 10px #000000;
 }
 .h_block h2 {
   font-size: 45px;
-  -webkit-text-shadow: 1px 1px 10px #000;
-  -moz-text-shadow: 1px 1px 10px #000;
-  text-shadow: 1px 1px 10px #000;
+  -webkit-text-shadow: 1px 1px 10px #000000;
+  -moz-text-shadow: 1px 1px 10px #000000;
+  text-shadow: 1px 1px 10px #000000;
 }
 .h_block h4 {
   font-size: 20px;
-  -webkit-text-shadow: 1px 1px 10px #000;
-  -moz-text-shadow: 1px 1px 10px #000;
-  text-shadow: 1px 1px 10px #000;
+  -webkit-text-shadow: 1px 1px 10px #000000;
+  -moz-text-shadow: 1px 1px 10px #000000;
+  text-shadow: 1px 1px 10px #000000;
 }
 form {
-  border: 10px solid #fff;
+  border: 10px solid #ffffff;
   background: rgba(163, 20, 20, 0.79);
   font-family: 'Kelly Slab', cursive;
 }
@@ -60,14 +60,14 @@ form .form_block_h {
 }
 form .form_block_h h2 {
   font-size: 38px;
-  -webkit-text-shadow: 2px 5px 1px #000;
-  -moz-text-shadow: 2px 5px 1px #000;
-  text-shadow: 2px 5px 1px #000;
+  -webkit-text-shadow: 2px 5px 1px #000000;
+  -moz-text-shadow: 2px 5px 1px #000000;
+  text-shadow: 2px 5px 1px #000000;
 }
 form .form_block_h h4 {
-  -webkit-text-shadow: 2px 5px 1px #000;
-  -moz-text-shadow: 2px 5px 1px #000;
-  text-shadow: 2px 5px 1px #000;
+  -webkit-text-shadow: 2px 5px 1px #000000;
+  -moz-text-shadow: 2px 5px 1px #000000;
+  text-shadow: 2px 5px 1px #000000;
 }
 form .btn-default {
   font-weight: bold;
@@ -81,7 +81,6 @@ form .soc_seti .btn:hover {
 }
 /* клиенты */
 .clients {
-  padding: 45px 0;
   background: url("../img/fons/ded_moroz_smotrit.jpg") center;
   background-size: cover;
   position: relative;
@@ -108,17 +107,17 @@ form .soc_seti .btn:hover {
 }
 .clients .clients_inner h4 {
   font-size: 20px;
-  -webkit-text-shadow: 2px 2px 1px #000;
-  -moz-text-shadow: 2px 2px 1px #000;
-  text-shadow: 2px 2px 1px #000;
+  -webkit-text-shadow: 2px 2px 1px #000000;
+  -moz-text-shadow: 2px 2px 1px #000000;
+  text-shadow: 2px 2px 1px #000000;
 }
 .clients .clients_inner p {
   font-size: 17px;
   display: block;
   padding-right: 20px;
-  -webkit-text-shadow: 2px 2px 1px #000;
-  -moz-text-shadow: 2px 2px 1px #000;
-  text-shadow: 2px 2px 1px #000;
+  -webkit-text-shadow: 2px 2px 1px #000000;
+  -moz-text-shadow: 2px 2px 1px #000000;
+  text-shadow: 2px 2px 1px #000000;
 }
 /* наши услуги */
 .uslugi {
@@ -155,8 +154,51 @@ form .soc_seti .btn:hover {
   left: 37%;
   font-size: 25px;
 }
+.about .abs_text span {
+  font-size: 25px;
+  -webkit-text-shadow: -2px -1px 1px #000000;
+  -moz-text-shadow: -2px -1px 1px #000000;
+  text-shadow: -2px -1px 1px #000000;
+}
 .about .abs_text.shapka2 {
   font-size: 17px;
-  top: 33%;
+  top: 25%;
   left: 39%;
+}
+.about .abs_text.shapka3 {
+  font-size: 18px;
+  top: 25%;
+  left: 36%;
+}
+.about .abs_text.shapka4 {
+  font-size: 18px;
+  top: 25%;
+  left: 31%;
+}
+.about .abs_text.shapka5 {
+  font-size: 18px;
+  top: 25%;
+  left: 36%;
+}
+.about #scene img {
+  position: absolute;
+}
+.about #scene img.sneg1 {
+  top: 1vmin;
+}
+.about #scene img.sneg2 {
+  top: 3vmin;
+  left: 60vmin;
+}
+.about #scene img.sneg3 {
+  top: 1vmin;
+  left: 120vmin;
+}
+.about #scene img.sneg4 {
+  top: 195px;
+  left: 135px;
+}
+.about #scene img.sneg5 {
+  top: 165px;
+  left: 535px;
 }
