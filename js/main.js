@@ -4,4 +4,8 @@ $(document).ready(function () {
         scalarX: 10,
         scalarY: 10
     });
+    $('#scene2').parallax({
+        scalarX: 10,
+        scalarY: 10
+    });
 });
