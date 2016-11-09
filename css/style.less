@@ -44,6 +44,14 @@
 .container-fluid{
   padding: 0;
 }
+.but_form{
+  &:hover{
+    color: #fff;
+    background: @color_red_main;
+    border: 1px solid #fff;
+  }
+}
+/* ========================= start ========================*/
 body{
   color: #fff;
 }
@@ -203,19 +211,19 @@ form{
       }
       &.sneg2{
         top: 1vw;
-        left: calc(1.5vh + 1.5vw + 50%);
+        left: calc(1.5vw + 30%);
       }
       &.sneg3{
         top: 1vw;
-        left: calc(1.9vh + 2.9vw + 95%);
+        left: calc(1.5vw + 55%);
       }
       &.sneg4{
-        top: 9vw;
-        left: 6vw;
+        top: 12vw;
+        left: 8vw;
       }
       &.sneg5{
-        top: 9vw;
-        left: 26vw;
+        top: 14vw;
+        left: 32vw;
       }
     }
   }
@@ -341,4 +349,179 @@ form{
       left: 60vw;
     }
   }
+}
+/* zakaz */
+.zakaz{
+  padding-bottom: 2em;
+  h2{
+    font-size: 35px;
+    font-weight: bold;
+    .text-shadow (1px, 1px, 1px, rgba(0, 0, 0, 0.6));
+    margin-bottom: 2em;
+    span{
+      color: @color_red_main;
+      .text-shadow (1px, 1px, 1px, rgba(255, 255, 255, 0.6));
+    }
+  }
+  .block_zakaz{
+    .inner_bl_zak{
+      .border(4px;dashed;rgba(163, 20, 20, 1));
+      border-radius: 40px;
+      min-height: 250px;
+      text-align: center;
+      padding: 1em;
+      .bg_transparent_white(0.37);
+      h4{
+        color: @color_red_main;
+        .text-shadow(1px;1px;1px;rgba(255,255,255,0.6));
+        font-family: @font_slab;
+        font-size: 25px;
+        font-weight: bold;
+      }
+    }
+    .bird_img{
+      position: absolute;
+      right: calc(0 - 32px - 15px);
+      top: calc(100% - 64px);
+      transform: scale(1.3);
+      z-index: 10;
+    }
+  }
+  .zakaz_btn{
+    .border(5px;solid;rgba(163, 20, 20, 1));
+    border-radius: 0;
+    margin-top: 4em;
+    font-size: 25px;
+    padding: 0 55px;
+    .bg_transparent_white(0.4);
+  }
+  button{
+    color: #000;
+    &:hover{
+      color: #fff;
+      .border(5px;solid; rgb(255, 255, 255));
+      background: @bg_transparent_red;
+    }
+  }
+}
+/* как мы работаем */
+.work-fluid{
+  .bg_transparent_white(0.75);
+  padding-bottom: 2em;
+  .work{
+    h2{
+      color: @color_red_main;
+      .text-shadow(1px;1px;1px;#000);
+      font-family: @font_slab;
+      font-weight: bold;
+      font-size: 35px;
+      margin-bottom: 2em;
+      span{
+        width: 100px;
+        margin-bottom: 1%;
+        height: 4px;
+        background-color: #000;
+        display: inline-block;
+        &:first-child{
+          margin-right: 1em;
+        }
+        &:last-child{
+          margin-left: 1em;
+        }
+      }
+    }
+    .work_inner{
+      font-family: @font_slab;
+      h4{
+        color: #000;
+        font-size: 25px;
+        .text-shadow(1px;1px;1px; rgba(0, 0, 0, 0.6));
+        font-weight: bold;
+      }
+      p{
+        color: @color_red_main;
+        .text-shadow(1px;1px;1px; rgba(0, 0, 0, 0.6));
+        font-size: 16px;
+        font-weight: bold;
+        span{
+          color: #000;
+        }
+      }
+    }
+  }
+}
+/* отзывы */
+.otzivi{
+  h2{
+    font-size: 35px;
+    font-family: @font_slab;
+    .text-shadow(1px;1px;1px; rgba(0, 0, 0, 0.6));
+    span{
+      color: @color_red_main;
+      .text-shadow(1px;1px;1px; rgba(255, 255, 255, 0.8));
+    }
+  }
+  .form_otzivi{
+    .bg_transparent_white(0.6);
+    padding-top: 2em;
+    button{
+      background: @color_red_main;
+      color: #fff;
+      &:hover{
+        color: @color_red_main;
+        .bg_transparent_white(0.7);
+        .border(1px;solid;@color_red_main);
+      }
+    }
+  }
+  .rating-container .clear-rating {
+    display: none;
+  }
+  .comments{
+    margin-top: 2em;
+    .comment_block{
+      .border(3px;solid;@color_red_main);
+      border-radius: 5px;
+      padding: 1em;
+      .bg_transparent_white(0.7);
+      color: #000;
+      margin-bottom: 1em;
+      p{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .input-group-addon{
+        border: none;
+        background: transparent;
+      }
+    }
+  }
+}
+/* foto*/
+.foto{
+  h2{
+    font-size: 35px;
+    font-family: @font_slab;
+    font-weight: bold;
+    span{
+      color: @bg_transparent_red;
+      .text-shadow(1px;1px;0px;rgba(255,255,255,0.5))
+    }
+  }
+  .owl-carousel{
+    .item{
+      margin: 3px;
+    }
+    img{
+      max-height: 50vh;
+      min-height: 300px;
+      width: 100%;
+      display: block;
+    }
+  }
+}
+/* остались вопросы */
+.voprosi{
+  margin-top: 4em;
+  padding-bottom: 4em;
 }

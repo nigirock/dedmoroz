@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/star-rating.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
     <link href="https://fonts.googleapis.com/css?family=Jura&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kelly+Slab&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -42,17 +46,17 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-10 col-md-offset-1 col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Имя">
+                            <input type="email" class="form-control" id="inputEmail1" placeholder="Имя">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-10 col-md-offset-1 col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Телефон">
+                            <input type="tel" class="form-control" id="inputPhone" placeholder="Телефон">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-offset-1 col-md-10 col-sm-10">
-                            <button type="submit" class="btn btn-default pull-right text-uppercase">заказать</button>
+                            <button type="submit" class="btn btn-default pull-right text-uppercase but_form">заказать</button>
                         </div>
                     </div>
                     <div class="form-group">
@@ -271,11 +275,156 @@
                 </div>
             </div>
     </section>
+    <section class="container zakaz">
+        <h2 class="text-center">При заказе <span>Деда Мороза</span><br> скидка на дополнительные услуги <span>19%</span></h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 block_zakaz">
+                <div class="inner_bl_zak col-md-11 col-sm-11 col-md-offset-1">
+                    <img src="img/foto.png" alt="">
+                    <h4>Фото или видео съемка вашего праздника</h4>
+                </div>
+                <img src="img/bird.png" alt="" class="bird_img">
+            </div>
+            <div class="col-md-4 col-sm-4 block_zakaz">
+                <div class="inner_bl_zak col-md-11 col-sm-11 col-md-offset-1">
+                    <img src="img/penguin.png" alt="">
+                    <h4>Дополнительные персонажи</h4>
+                </div>
+                <img src="img/bird.png" alt="" class="bird_img">
+            </div>
+            <div class="col-md-4 col-sm-4 block_zakaz">
+                <div class="inner_bl_zak col-md-11 col-sm-11 col-md-offset-1">
+                    <img src="img/cards.png" alt="">
+                    <h4>Карта постоянного клиента</h4>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button class="btn btn-default center-block zakaz_btn">Заказать дополнительную услугу</button>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid work-fluid">
+        <div class="container work">
+            <h2 class="text-center"><span></span>Как мы работаем<span></span></h2>
+            <div class="row">
+                <div class="col-md-3 text-center work_inner">
+                    <img src="img/zajavka.png" alt="">
+                    <h4>Заявка от вас</h4>
+                    <p>Вы оставляете заявку на сайте или звоните по телефону <span>+375257617803</span></p>
+                </div>
+                <div class="col-md-3 text-center work_inner">
+                    <img src="img/detali.png" alt="">
+                    <h4>Уточняем детали</h4>
+                    <p>Наш Менеджер перезвонит вам и согласует все детали предстоящего праздника</p>
+                </div>
+                <div class="col-md-3 text-center work_inner">
+                    <img src="img/viezd_menegera.png" alt="">
+                    <h4>Выезд менеджера</h4>
+                    <p>Менеджер высылает вам и договор на почту о проведения праздника</p>
+                </div>
+                <div class="col-md-3 text-center work_inner">
+                    <img src="img/napominanie.png" alt="">
+                    <h4>Напоминаем за день</h4>
+                    <p>За день до мераприятия мы присылаем смс</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container otzivi">
+        <h2 class="text-center">Отзывы <span>наших клиентов</span></h2>
+                <form class="form-horizontal form_otzivi">
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-1 col-sm-10">
+                            <input type="text" class="form-control" id="inputName" placeholder="Ваше имя"><br>
+                            <textarea placeholder="Оставить сообщение..." class="form-control col-md-12"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-md-offset-1">
+                        <input id="input-id" type="text" class="rating rating-loading" data-size="sm" value="5" data-min="0" data-max="5" data-step="1">
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-1 col-md-10 col-sm-10">
+                            <button type="submit" class="btn btn-default pull-right text-uppercase">Оставить отзыв</button>
+                        </div>
+                    </div>
+                </form>
+        <!-- отзывы людей -->
+        <div class="col-md-12 comments">
+            <div class="col-md-8 col-md-offset-2 comment_block">
+                <p>Большое вам спасибо. Дети остались в восторге. Мы тоже. Всем советую)</p>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon">Алексей</span>
+                    <input id="input-id1" type="text" aria-describedby="basic-addon" class="rating rating-loading" data-size="sm" value="5" data-disabled="true">
+                </div>
+
+            </div>
+            <div class="col-md-8 col-md-offset-2 comment_block">
+                <p>Большое вам спасибо. Дети остались в восторге. Мы тоже. Всем советую)</p>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon">Наталья</span>
+                    <input id="input-id1" type="text" aria-describedby="basic-addon" class="rating rating-loading" data-size="sm" value="4"  data-disabled="true">
+                </div>
+
+            </div>
+        </div>
+        <!-- конец отзывов-->
+    </section>
+    <section class="container-fluid foto">
+        <h2 class="text-center">Фото <span>наших праздников</span></h2>
+        <div id="owl-example" class="owl-carousel">
+            <div class="item"><img class="lazyOwl" data-src="img/gallery/1.jpg" alt=""> </div>
+            <div class="item"><img class="lazyOwl" data-src="img/gallery/2.jpg" alt=""> </div>
+            <div class="item"><img class="lazyOwl" data-src="img/gallery/3.jpg" alt=""> </div>
+            <div class="item"><img class="lazyOwl" data-src="img/gallery/4.jpg" alt=""> </div>
+            <div class="item"><img class="lazyOwl" data-src="img/gallery/5.jpg" alt=""> </div>
+            <div class="item"><img class="lazyOwl" data-src="img/gallery/6.jpg" alt=""> </div>
+            <div class="item"><img class="lazyOwl" data-src="img/gallery/7.jpg" alt=""> </div>
+            <div class="item"><img class="lazyOwl" data-src="img/gallery/8.jpg" alt=""> </div>
+            <div class="item"><img class="lazyOwl" data-src="img/gallery/9.jpeg" alt=""> </div>
+            <div class="item"><img class="lazyOwl" data-src="img/gallery/10.jpg" alt=""> </div>
+        </div>
+    </section>
+    <section class="container voprosi">
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+             <form class="form-horizontal">
+                   <div class="form_block_h col-md-10 col-md-offset-1 col-sm-10">
+                       <h2>У вас остались вопросы?</h2>
+                   </div>
+                   <div class="form-group">
+                       <div class="col-md-10 col-md-offset-1 col-sm-10">
+                           <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail">
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <div class="col-md-10 col-md-offset-1 col-sm-10">
+                           <textarea class="form-control" id="inputText3" placeholder="Сообщение"></textarea>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <div class="col-md-offset-1 col-md-10 col-sm-10">
+                           <button type="submit" class="btn btn-default pull-right text-uppercase but_form">заказать</button>
+                       </div>
+                   </div>
+                 <div class="form-group">
+                     <div class="soc_seti col-md-10 col-md-offset-1 col-sm-10">
+                         <a href="#"><img src="img/vk.png" alt="vk" class="btn"></a>
+                         <a href="#"><img src="img/instagram.png" alt="instagram" class="btn"></a>
+                         <a href="#"><img src="img/twitter.png" alt="twitter" class="btn"></a>
+                     </div>
+                 </div>
+             </form>
+            </div>
+        </div>
+    </section>
 </div>
 <script src=js/jquery.min.js></script>
 <script src=js/bootstrap.min.js></script>
 <script src="js/parallax1.min.js"></script>
 <script src="js/jquery.parallax.min.js"></script>
+<script src="js/star-rating.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
