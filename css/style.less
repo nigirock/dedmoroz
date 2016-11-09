@@ -253,6 +253,11 @@ form{
         border-radius: 0;
         padding: 12px;
         font-size: 18px;
+        &:hover{
+          color: #871815;
+          background: rgba(255, 255, 255, 0.7);
+          border: 1px solid #871815;
+        }
       }
     img{
       position: absolute;
@@ -513,7 +518,7 @@ form{
       margin: 3px;
     }
     img{
-      max-height: 50vh;
+      max-height: 300px;
       min-height: 300px;
       width: 100%;
       display: block;
@@ -524,4 +529,32 @@ form{
 .voprosi{
   margin-top: 4em;
   padding-bottom: 4em;
+  .first_block{
+    h2{
+      font-size: 35px;
+      font-weight: bold;
+      font-family: @font_jura;
+      .text-shadow(1px;1px;0px;rgba(0,0,0,0.5));
+      span:first-child{
+        color: @color_red_main;
+        .text-shadow(1px;1px;0px;rgba(255,255,255,0.5));
+      }
+      span:last-child{
+        color: #000;
+        .text-shadow(1px;1px;0px;rgba(255,255,255,0.5));
+      }
+    }
+    a{
+      font-size: 35px;
+      font-weight: bold;
+      &:hover{
+        color: #3B65ED;
+      }
+    }
+    address{
+      font-size: 25px;
+      font-weight: bold;
+      .text-shadow(1px;1px;0px;rgba(0,0,0,0.5));
+    }
+  }
 }
