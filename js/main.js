@@ -22,4 +22,5 @@ $(document).ready(function () {
         console.log(value);
         console.log(caption);
     })
+    new WOW().init();
 });

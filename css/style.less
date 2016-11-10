@@ -51,6 +51,9 @@
     border: 1px solid #fff;
   }
 }
+.norm_line{
+  line-height: normal !important;
+}
 /* ========================= start ========================*/
 body{
   color: #fff;
@@ -148,9 +151,66 @@ form{
 /* наши услуги */
 .uslugi{
   padding-bottom: 40px;
+  h2{
+    font-size: 35px;
+    font-weight: bold;
+    span{
+      color: @color_red_main;
+      .text-shadow(1px;1px;0;rgba(0,0,0,0.6));
+    }
+  }
   .uslugi_blocks{
     .border(10px;solid;@color_red_main);
-    min-height: 50vh;
+    .bg_transparent_white(0.6);
+    color: @color_red_main;
+    font-family: @font_jura;
+    padding-bottom: 1em;
+    min-height: 50em;
+    .description{
+      color: #000;
+    }
+    .us_lt_bl1{
+      font-size: 15px;
+    }
+    .us_lt_bl2{
+      font-size: 25px;
+    }
+    .us_lt_bl3{
+      font-size: 16px;
+    }
+    h3{
+      color: #000;
+      font-weight: bold;
+      font-size: 34px;
+    }
+    p{
+      font-weight: bold;
+      line-height: 50px;
+    }
+    img{
+      height: auto;
+      width: 55px;
+    }
+    .usl_inner_bl{
+      padding: 1em 0;
+    }
+    button{
+      color: #fff;
+      background-color: #871815;
+      border: 3px solid #fff;
+      border-radius: 0;
+      padding: 0.5em 2em;
+      font-size: 18px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 2em;
+      left: calc(50% - 32px);
+      &:hover{
+        color: @color_red_main;
+        background: #fff;
+        border: 3px solid @color_red_main;
+      }
+    }
   }
 }
 /* about */
