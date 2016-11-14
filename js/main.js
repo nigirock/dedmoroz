@@ -1,6 +1,10 @@
 $(document).ready(function () {
     new WOW().init();
-    $('.parallax-window').parallax1();
+    $('.parallax-window').parallax1({
+        naturalWidth: 1920,
+        naturalHeight: 960,
+        speed: 0.05
+    });
     $("#owl-example").owlCarousel({
         items : 3,
         autoPlay : 4000,

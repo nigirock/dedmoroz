@@ -14,10 +14,15 @@
     -webkit-transform: rotate(0deg);
   }
 }
-.parallax-window {
+/*.parallax-window {
   min-height: 100vh;
   background: transparent;
   position: relative;
+}*/
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+  background-size: cover;
 }
 .vcenter {
   display: inline-block;
@@ -46,35 +51,35 @@ body {
 }
 .phone {
   font-family: 'Kelly Slab', cursive;
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bold;
-  -webkit-text-shadow: -1px -1px 0px #000000;
-  -moz-text-shadow: -1px -1px 0px #000000;
-  text-shadow: -1px -1px 0px #000000;
+  -webkit-text-shadow: -1px -1px 0px #000;
+  -moz-text-shadow: -1px -1px 0px #000;
+  text-shadow: -1px -1px 0px #000;
 }
 .logo_phone img {
   float: right;
 }
 .h_block h1 {
   font-size: 60px;
-  -webkit-text-shadow: 1px 1px 10px #000000;
-  -moz-text-shadow: 1px 1px 10px #000000;
-  text-shadow: 1px 1px 10px #000000;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
 }
 .h_block h2 {
   font-size: 45px;
-  -webkit-text-shadow: 1px 1px 10px #000000;
-  -moz-text-shadow: 1px 1px 10px #000000;
-  text-shadow: 1px 1px 10px #000000;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
 }
 .h_block h4 {
   font-size: 20px;
-  -webkit-text-shadow: 1px 1px 10px #000000;
-  -moz-text-shadow: 1px 1px 10px #000000;
-  text-shadow: 1px 1px 10px #000000;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
 }
 form {
-  border: 10px solid #ffffff;
+  border: 10px solid #fff;
   background: rgba(163, 20, 20, 0.79);
   font-family: 'Kelly Slab', cursive;
 }
@@ -83,14 +88,14 @@ form .form_block_h {
 }
 form .form_block_h h2 {
   font-size: 38px;
-  -webkit-text-shadow: 2px 5px 1px #000000;
-  -moz-text-shadow: 2px 5px 1px #000000;
-  text-shadow: 2px 5px 1px #000000;
+  -webkit-text-shadow: 2px 5px 1px #000;
+  -moz-text-shadow: 2px 5px 1px #000;
+  text-shadow: 2px 5px 1px #000;
 }
 form .form_block_h h4 {
-  -webkit-text-shadow: 2px 5px 1px #000000;
-  -moz-text-shadow: 2px 5px 1px #000000;
-  text-shadow: 2px 5px 1px #000000;
+  -webkit-text-shadow: 2px 5px 1px #000;
+  -moz-text-shadow: 2px 5px 1px #000;
+  text-shadow: 2px 5px 1px #000;
 }
 form .btn-default {
   font-weight: bold;
@@ -130,17 +135,17 @@ form .soc_seti .btn:hover {
 }
 .clients .clients_inner h4 {
   font-size: 20px;
-  -webkit-text-shadow: 2px 2px 1px #000000;
-  -moz-text-shadow: 2px 2px 1px #000000;
-  text-shadow: 2px 2px 1px #000000;
+  -webkit-text-shadow: 2px 2px 1px #000;
+  -moz-text-shadow: 2px 2px 1px #000;
+  text-shadow: 2px 2px 1px #000;
 }
 .clients .clients_inner p {
   font-size: 17px;
   display: block;
   padding-right: 20px;
-  -webkit-text-shadow: 2px 2px 1px #000000;
-  -moz-text-shadow: 2px 2px 1px #000000;
-  text-shadow: 2px 2px 1px #000000;
+  -webkit-text-shadow: 2px 2px 1px #000;
+  -moz-text-shadow: 2px 2px 1px #000;
+  text-shadow: 2px 2px 1px #000;
 }
 /* наши услуги */
 .uslugi {
@@ -238,9 +243,9 @@ form .soc_seti .btn:hover {
 }
 .about .abs_text span {
   font-size: 25px;
-  -webkit-text-shadow: -2px -1px 1px #000000;
-  -moz-text-shadow: -2px -1px 1px #000000;
-  text-shadow: -2px -1px 1px #000000;
+  -webkit-text-shadow: -2px -1px 1px #000;
+  -moz-text-shadow: -2px -1px 1px #000;
+  text-shadow: -2px -1px 1px #000;
 }
 .about .abs_text.shapka2 {
   font-size: 17px;
@@ -292,9 +297,9 @@ form .soc_seti .btn:hover {
   font-family: 'Kelly Slab', cursive;
   font-size: 50px;
   padding-bottom: 1em;
-  -webkit-text-shadow: 0px 4px 5px #000000;
-  -moz-text-shadow: 0px 4px 5px #000000;
-  text-shadow: 0px 4px 5px #000000;
+  -webkit-text-shadow: 0px 4px 5px #000;
+  -moz-text-shadow: 0px 4px 5px #000;
+  text-shadow: 0px 4px 5px #000;
 }
 .cudesa h4 {
   font-size: 20px;
@@ -305,7 +310,7 @@ form .soc_seti .btn:hover {
 .cudesa form .btn-default {
   color: #fff;
   background-color: #871815;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-radius: 0;
   padding: 12px;
   font-size: 18px;
@@ -470,9 +475,9 @@ form .soc_seti .btn:hover {
 }
 .work-fluid .work h2 {
   color: #871815;
-  -webkit-text-shadow: 1px 1px 1px #000000;
-  -moz-text-shadow: 1px 1px 1px #000000;
-  text-shadow: 1px 1px 1px #000000;
+  -webkit-text-shadow: 1px 1px 1px #000;
+  -moz-text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #000;
   font-family: 'Kelly Slab', cursive;
   font-weight: bold;
   font-size: 35px;
