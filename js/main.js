@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    new WOW().init();
     $('.parallax-window').parallax1();
     $("#owl-example").owlCarousel({
         items : 3,
@@ -22,5 +23,4 @@ $(document).ready(function () {
         console.log(value);
         console.log(caption);
     })
-    new WOW().init();
 });
