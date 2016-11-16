@@ -164,59 +164,43 @@ form{
       .text-shadow(1px;1px;0;rgba(0,0,0,0.6));
     }
   }
-  .uslugi_blocks{
-    .border(10px;solid;@color_red_main);
-    .bg_transparent_white(0.6);
-    color: @color_red_main;
-    font-family: @font_jura;
-    padding-bottom: 1em;
-    min-height: 50em;
-    .description{
-      color: #000;
-    }
-    .us_lt_bl1{
-      font-size: 15px;
-    }
-    .us_lt_bl2{
-      font-size: 25px;
-    }
-    .us_lt_bl3{
-      font-size: 16px;
-    }
-    h3{
-      color: #000;
-      font-weight: bold;
-      font-size: 34px;
-    }
-    p{
-      font-weight: bold;
-      line-height: 50px;
-    }
-    img{
-      height: auto;
-      width: 55px;
-    }
-    .usl_inner_bl{
-      padding: 1em 0;
-    }
-    button{
-      color: #fff;
-      background-color: #871815;
-      border: 3px solid #fff;
-      border-radius: 0;
-      padding: 0.5em 2em;
-      font-size: 18px;
-      font-weight: bold;
-      position: absolute;
-      bottom: 2em;
-      left: calc(50% - 32px);
-      &:hover{
-        color: @color_red_main;
-        background: #fff;
-        border: 3px solid @color_red_main;
+  h3{
+    font-size: 2.5em;
+    font-family: @font_slab;
+    font-weight: bold;
+    .text-shadow(1px;1px;1px;rgba(0,0,0,0.9))
+  }
+table{
+  background: @bg_transparent_red;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: @font_slab;
+  thead{
+    tr{
+      th{
+        text-align: center;
+        font-size: 1.5em;
       }
     }
   }
+  tbody{
+    tr{
+      td{
+        vertical-align: middle;
+      }
+    }
+  }
+  button{
+    color: #fff;
+    background-color: #871815;
+    border: 1px solid #fff;
+    border-radius: 0;
+    font-size: 18px;
+    &:hover{
+      color: @color_red_main;
+  }
+  }
+}
 }
 /* about */
 .about{

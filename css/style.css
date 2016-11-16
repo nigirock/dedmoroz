@@ -53,33 +53,33 @@ body {
   font-family: 'Kelly Slab', cursive;
   font-size: 1.5em;
   font-weight: bold;
-  -webkit-text-shadow: -1px -1px 0px #000000;
-  -moz-text-shadow: -1px -1px 0px #000000;
-  text-shadow: -1px -1px 0px #000000;
+  -webkit-text-shadow: -1px -1px 0px #000;
+  -moz-text-shadow: -1px -1px 0px #000;
+  text-shadow: -1px -1px 0px #000;
 }
 .logo_phone img {
   float: right;
 }
 .h_block h1 {
   font-size: 60px;
-  -webkit-text-shadow: 1px 1px 10px #000000;
-  -moz-text-shadow: 1px 1px 10px #000000;
-  text-shadow: 1px 1px 10px #000000;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
 }
 .h_block h2 {
   font-size: 45px;
-  -webkit-text-shadow: 1px 1px 10px #000000;
-  -moz-text-shadow: 1px 1px 10px #000000;
-  text-shadow: 1px 1px 10px #000000;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
 }
 .h_block h4 {
   font-size: 20px;
-  -webkit-text-shadow: 1px 1px 10px #000000;
-  -moz-text-shadow: 1px 1px 10px #000000;
-  text-shadow: 1px 1px 10px #000000;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
 }
 form {
-  border: 10px solid #ffffff;
+  border: 10px solid #fff;
   background: rgba(163, 20, 20, 0.79);
   font-family: 'Kelly Slab', cursive;
 }
@@ -88,14 +88,14 @@ form .form_block_h {
 }
 form .form_block_h h2 {
   font-size: 38px;
-  -webkit-text-shadow: 2px 5px 1px #000000;
-  -moz-text-shadow: 2px 5px 1px #000000;
-  text-shadow: 2px 5px 1px #000000;
+  -webkit-text-shadow: 2px 5px 1px #000;
+  -moz-text-shadow: 2px 5px 1px #000;
+  text-shadow: 2px 5px 1px #000;
 }
 form .form_block_h h4 {
-  -webkit-text-shadow: 2px 5px 1px #000000;
-  -moz-text-shadow: 2px 5px 1px #000000;
-  text-shadow: 2px 5px 1px #000000;
+  -webkit-text-shadow: 2px 5px 1px #000;
+  -moz-text-shadow: 2px 5px 1px #000;
+  text-shadow: 2px 5px 1px #000;
 }
 form .btn-default {
   font-weight: bold;
@@ -135,17 +135,17 @@ form .soc_seti .btn:hover {
 }
 .clients .clients_inner h4 {
   font-size: 20px;
-  -webkit-text-shadow: 2px 2px 1px #000000;
-  -moz-text-shadow: 2px 2px 1px #000000;
-  text-shadow: 2px 2px 1px #000000;
+  -webkit-text-shadow: 2px 2px 1px #000;
+  -moz-text-shadow: 2px 2px 1px #000;
+  text-shadow: 2px 2px 1px #000;
 }
 .clients .clients_inner p {
   font-size: 17px;
   display: block;
   padding-right: 20px;
-  -webkit-text-shadow: 2px 2px 1px #000000;
-  -moz-text-shadow: 2px 2px 1px #000000;
-  text-shadow: 2px 2px 1px #000000;
+  -webkit-text-shadow: 2px 2px 1px #000;
+  -moz-text-shadow: 2px 2px 1px #000;
+  text-shadow: 2px 2px 1px #000;
 }
 /* наши услуги */
 .uslugi {
@@ -161,58 +161,36 @@ form .soc_seti .btn:hover {
   -moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
 }
-.uslugi .uslugi_blocks {
-  border: 10px solid #871815;
-  background: rgba(255, 255, 255, 0.6);
-  color: #871815;
-  font-family: 'Jura', sans-serif;
-  padding-bottom: 1em;
-  min-height: 50em;
-}
-.uslugi .uslugi_blocks .description {
-  color: #000;
-}
-.uslugi .uslugi_blocks .us_lt_bl1 {
-  font-size: 15px;
-}
-.uslugi .uslugi_blocks .us_lt_bl2 {
-  font-size: 25px;
-}
-.uslugi .uslugi_blocks .us_lt_bl3 {
-  font-size: 16px;
-}
-.uslugi .uslugi_blocks h3 {
-  color: #000;
+.uslugi h3 {
+  font-size: 2.5em;
+  font-family: 'Kelly Slab', cursive;
   font-weight: bold;
-  font-size: 34px;
+  -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
 }
-.uslugi .uslugi_blocks p {
-  font-weight: bold;
-  line-height: 50px;
+.uslugi table {
+  background: rgba(163, 20, 20, 0.79);
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Kelly Slab', cursive;
 }
-.uslugi .uslugi_blocks img {
-  height: auto;
-  width: 55px;
+.uslugi table thead tr th {
+  text-align: center;
+  font-size: 1.5em;
 }
-.uslugi .uslugi_blocks .usl_inner_bl {
-  padding: 1em 0;
+.uslugi table tbody tr td {
+  vertical-align: middle;
 }
-.uslugi .uslugi_blocks button {
+.uslugi table button {
   color: #fff;
   background-color: #871815;
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   border-radius: 0;
-  padding: 0.5em 2em;
   font-size: 18px;
-  font-weight: bold;
-  position: absolute;
-  bottom: 2em;
-  left: calc(18%);
 }
-.uslugi .uslugi_blocks button:hover {
+.uslugi table button:hover {
   color: #871815;
-  background: #fff;
-  border: 3px solid #871815;
 }
 /* about */
 .about {
@@ -243,9 +221,9 @@ form .soc_seti .btn:hover {
 }
 .about .abs_text span {
   font-size: 25px;
-  -webkit-text-shadow: -2px -1px 1px #000000;
-  -moz-text-shadow: -2px -1px 1px #000000;
-  text-shadow: -2px -1px 1px #000000;
+  -webkit-text-shadow: -2px -1px 1px #000;
+  -moz-text-shadow: -2px -1px 1px #000;
+  text-shadow: -2px -1px 1px #000;
 }
 .about .abs_text.shapka2 {
   font-size: 17px;
@@ -297,9 +275,9 @@ form .soc_seti .btn:hover {
   font-family: 'Kelly Slab', cursive;
   font-size: 50px;
   padding-bottom: 1em;
-  -webkit-text-shadow: 0px 4px 5px #000000;
-  -moz-text-shadow: 0px 4px 5px #000000;
-  text-shadow: 0px 4px 5px #000000;
+  -webkit-text-shadow: 0px 4px 5px #000;
+  -moz-text-shadow: 0px 4px 5px #000;
+  text-shadow: 0px 4px 5px #000;
 }
 .cudesa h4 {
   font-size: 20px;
@@ -310,7 +288,7 @@ form .soc_seti .btn:hover {
 .cudesa form .btn-default {
   color: #fff;
   background-color: #871815;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-radius: 0;
   padding: 12px;
   font-size: 18px;
@@ -475,9 +453,9 @@ form .soc_seti .btn:hover {
 }
 .work-fluid .work h2 {
   color: #871815;
-  -webkit-text-shadow: 1px 1px 1px #000000;
-  -moz-text-shadow: 1px 1px 1px #000000;
-  text-shadow: 1px 1px 1px #000000;
+  -webkit-text-shadow: 1px 1px 1px #000;
+  -moz-text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #000;
   font-family: 'Kelly Slab', cursive;
   font-weight: bold;
   font-size: 35px;

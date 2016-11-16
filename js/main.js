@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    new WOW().init();
+
     $('.parallax-window').parallax1({
         naturalWidth: 1920,
         naturalHeight: 960,
@@ -27,4 +27,7 @@ $(document).ready(function () {
         console.log(value);
         console.log(caption);
     })
+    var price = $('.price_td').text();
+    var date = $('.date_td').text();
+    console.log(date + " " + price);
 });
