@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    $(".popup").magnificPopup();
+    $("#mask").inputmask({
+        "mask":"+375 (99) 999-9999"
+    });
 
     $('.parallax-window').parallax1({
         naturalWidth: 1920,
@@ -26,8 +30,35 @@ $(document).ready(function () {
     $('#input-id').on('rating.change', function(event, value, caption) {
         console.log(value);
         console.log(caption);
-    })
-    var price = $('.price_td').text();
-    var date = $('.date_td').text();
-    console.log(date + " " + price);
+    });
+
+    var btn = $('.button');
+
+    function Test() {
+        window.d = $(btn).data('date');
+    }
+    btn.on('click',Test);
+    Test();
+    console.log(d);
+
+
+    //Аякс отправка форм
+    //Документация: http://api.jquery.com/jquery.ajax/
+    $("#form").submit(function() {
+     /*   var formID = $(this).attr('id');
+        var formNm = $('#' + formID);*/
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: $(this).serialize()
+        }).done(function() {
+            setTimeout(function() {
+                $.magnificPopup.close();
+                $('.bs-example-modal-sm').modal();
+                $("#form").trigger("reset");
+            }, 500);
+
+        });
+        return false;
+    });
 });

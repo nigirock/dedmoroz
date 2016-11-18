@@ -1,3 +1,4 @@
+@import "magnific-popup.css";
 /* переменные */
 /* mixins*/
 @-webkit-keyframes rotate {
@@ -38,12 +39,26 @@
   background: #871815;
   border: 1px solid #fff;
 }
+.but_form:focus {
+  color: #fff;
+  background: #871815;
+  border: 1px solid #fff;
+}
+.but_form:active {
+  color: #fff;
+  background: #871815;
+  border: 1px solid #fff;
+}
 .norm_line {
   line-height: normal !important;
+}
+.modal {
+  color: #000;
 }
 /* ========================= start ========================*/
 body {
   color: #fff;
+  font-size: 1em;
 }
 /* header*/
 .head_block {
@@ -53,33 +68,33 @@ body {
   font-family: 'Kelly Slab', cursive;
   font-size: 1.5em;
   font-weight: bold;
-  -webkit-text-shadow: -1px -1px 0px #000000;
-  -moz-text-shadow: -1px -1px 0px #000000;
-  text-shadow: -1px -1px 0px #000000;
+  -webkit-text-shadow: -1px -1px 0px #000;
+  -moz-text-shadow: -1px -1px 0px #000;
+  text-shadow: -1px -1px 0px #000;
 }
 .logo_phone img {
   float: right;
 }
 .h_block h1 {
   font-size: 60px;
-  -webkit-text-shadow: 1px 1px 10px #000000;
-  -moz-text-shadow: 1px 1px 10px #000000;
-  text-shadow: 1px 1px 10px #000000;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
 }
 .h_block h2 {
   font-size: 45px;
-  -webkit-text-shadow: 1px 1px 10px #000000;
-  -moz-text-shadow: 1px 1px 10px #000000;
-  text-shadow: 1px 1px 10px #000000;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
 }
 .h_block h4 {
   font-size: 20px;
-  -webkit-text-shadow: 1px 1px 10px #000000;
-  -moz-text-shadow: 1px 1px 10px #000000;
-  text-shadow: 1px 1px 10px #000000;
+  -webkit-text-shadow: 1px 1px 10px #000;
+  -moz-text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #000;
 }
 form {
-  border: 10px solid #ffffff;
+  border: 10px solid #fff;
   background: rgba(163, 20, 20, 0.79);
   font-family: 'Kelly Slab', cursive;
 }
@@ -88,14 +103,14 @@ form .form_block_h {
 }
 form .form_block_h h2 {
   font-size: 38px;
-  -webkit-text-shadow: 2px 5px 1px #000000;
-  -moz-text-shadow: 2px 5px 1px #000000;
-  text-shadow: 2px 5px 1px #000000;
+  -webkit-text-shadow: 2px 5px 1px #000;
+  -moz-text-shadow: 2px 5px 1px #000;
+  text-shadow: 2px 5px 1px #000;
 }
 form .form_block_h h4 {
-  -webkit-text-shadow: 2px 5px 1px #000000;
-  -moz-text-shadow: 2px 5px 1px #000000;
-  text-shadow: 2px 5px 1px #000000;
+  -webkit-text-shadow: 2px 5px 1px #000;
+  -moz-text-shadow: 2px 5px 1px #000;
+  text-shadow: 2px 5px 1px #000;
 }
 form .btn-default {
   font-weight: bold;
@@ -135,17 +150,17 @@ form .soc_seti .btn:hover {
 }
 .clients .clients_inner h4 {
   font-size: 20px;
-  -webkit-text-shadow: 2px 2px 1px #000000;
-  -moz-text-shadow: 2px 2px 1px #000000;
-  text-shadow: 2px 2px 1px #000000;
+  -webkit-text-shadow: 2px 2px 1px #000;
+  -moz-text-shadow: 2px 2px 1px #000;
+  text-shadow: 2px 2px 1px #000;
 }
 .clients .clients_inner p {
   font-size: 17px;
   display: block;
   padding-right: 20px;
-  -webkit-text-shadow: 2px 2px 1px #000000;
-  -moz-text-shadow: 2px 2px 1px #000000;
-  text-shadow: 2px 2px 1px #000000;
+  -webkit-text-shadow: 2px 2px 1px #000;
+  -moz-text-shadow: 2px 2px 1px #000;
+  text-shadow: 2px 2px 1px #000;
 }
 /* наши услуги */
 .uslugi {
@@ -182,15 +197,17 @@ form .soc_seti .btn:hover {
 .uslugi table tbody tr td {
   vertical-align: middle;
 }
-.uslugi table button {
+.uslugi table .button {
   color: #fff;
   background-color: #871815;
   border: 1px solid #fff;
   border-radius: 0;
   font-size: 18px;
 }
-.uslugi table button:hover {
+.uslugi table .button:hover {
   color: #871815;
+  background: #fff;
+  font-weight: bold;
 }
 /* about */
 .about {
@@ -221,9 +238,9 @@ form .soc_seti .btn:hover {
 }
 .about .abs_text span {
   font-size: 25px;
-  -webkit-text-shadow: -2px -1px 1px #000000;
-  -moz-text-shadow: -2px -1px 1px #000000;
-  text-shadow: -2px -1px 1px #000000;
+  -webkit-text-shadow: -2px -1px 1px #000;
+  -moz-text-shadow: -2px -1px 1px #000;
+  text-shadow: -2px -1px 1px #000;
 }
 .about .abs_text.shapka2 {
   font-size: 17px;
@@ -275,9 +292,9 @@ form .soc_seti .btn:hover {
   font-family: 'Kelly Slab', cursive;
   font-size: 50px;
   padding-bottom: 1em;
-  -webkit-text-shadow: 0px 4px 5px #000000;
-  -moz-text-shadow: 0px 4px 5px #000000;
-  text-shadow: 0px 4px 5px #000000;
+  -webkit-text-shadow: 0px 4px 5px #000;
+  -moz-text-shadow: 0px 4px 5px #000;
+  text-shadow: 0px 4px 5px #000;
 }
 .cudesa h4 {
   font-size: 20px;
@@ -288,7 +305,7 @@ form .soc_seti .btn:hover {
 .cudesa form .btn-default {
   color: #fff;
   background-color: #871815;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-radius: 0;
   padding: 12px;
   font-size: 18px;
@@ -453,9 +470,9 @@ form .soc_seti .btn:hover {
 }
 .work-fluid .work h2 {
   color: #871815;
-  -webkit-text-shadow: 1px 1px 1px #000000;
-  -moz-text-shadow: 1px 1px 1px #000000;
-  text-shadow: 1px 1px 1px #000000;
+  -webkit-text-shadow: 1px 1px 1px #000;
+  -moz-text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #000;
   font-family: 'Kelly Slab', cursive;
   font-weight: bold;
   font-size: 35px;
@@ -604,4 +621,181 @@ form .soc_seti .btn:hover {
   -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
   -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.forms {
+  padding: 2em;
+}
+.forms .form-control {
+  font-size: 2em;
+  color: #000;
+}
+.forms button {
+  background: #fff;
+  color: #871815;
+  font-size: 2em;
+  font-weight: bold;
+}
+/* ==============  media query ==================== */
+/* Large desktops and laptops */
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .scenarij .scenarij_blocks .kov2 {
+    bottom: -36px;
+    right: -3px;
+  }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .phone_block {
+    text-align: center;
+  }
+  form .form_block_h {
+    text-align: center;
+  }
+  .border_bl {
+    border-bottom: 1px solid #fff;
+  }
+  .about .abs_text {
+    left: 29%;
+  }
+  .about .abs_text.shapka2 {
+    left: 33%;
+  }
+  .about .abs_text.shapka3 {
+    left: 28%;
+  }
+  .about .abs_text.shapka4 {
+    font-size: 16px;
+    top: 28%;
+    left: 24%;
+  }
+  .about .abs_text.shapka5 {
+    left: 27%;
+  }
+  #scene img {
+    opacity: 0.5;
+  }
+  .zakaz .block_zakaz .inner_bl_zak {
+    min-height: 285px;
+  }
+  .zakaz .zakaz_btn {
+    margin-top: 2em;
+  }
+  .zakaz .block_zakaz .bird_img {
+    right: -10%;
+    top: 25%;
+  }
+  .zakaz .block_zakaz .inner_bl_zak h4 {
+    font-size: 1.5em;
+  }
+  .cudesa form img {
+    left: 86%;
+    width: 13vw;
+  }
+  .scenarij .scenarij_blocks .kov2 {
+    bottom: -26%;
+    left: 88%;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .phone_block {
+    text-align: center;
+  }
+  .phone {
+    font-size: 2.5em;
+  }
+  #scene {
+    display: none;
+  }
+  .about .abs_text {
+    position: relative;
+    font-size: 2em;
+    left: 0;
+  }
+  .about .abs_text span {
+    font-size: 2em;
+  }
+  .about .abs_text br {
+    display: none;
+  }
+  .about .abs_text.shapka2 {
+    left: 0;
+    font-size: 2em;
+  }
+  .about .abs_text.shapka2 span {
+    font-size: 2em;
+  }
+  .about .abs_text.shapka3 {
+    left: 0;
+    font-size: 2em;
+  }
+  .about .abs_text.shapka3 span {
+    font-size: 2em;
+  }
+  .about .abs_text.shapka4 {
+    left: 0;
+    font-size: 2em;
+  }
+  .about .abs_text.shapka4 span {
+    font-size: 2em;
+  }
+  .about .abs_text.shapka5 {
+    left: 0;
+    font-size: 2em;
+  }
+  .about .abs_text.shapka5 span {
+    font-size: 2em;
+  }
+  .about img {
+    display: none;
+  }
+  .cudesa form img {
+    position: absolute;
+    top: -63px;
+    left: 84%;
+    width: 13vw;
+  }
+  .scenarij .scenarij_blocks .kov2 {
+    bottom: -29%;
+    left: 85%;
+  }
+  .zakaz .block_zakaz .inner_bl_zak {
+    margin-bottom: 2em;
+  }
+  .zakaz .block_zakaz .bird_img {
+    right: 46%;
+    top: 88%;
+  }
+  .zakaz .zakaz_btn {
+    margin-top: 2em;
+    font-size: 2em;
+  }
+  .work-fluid .work h2 span {
+    width: 8vw;
+  }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .zakaz .zakaz_btn {
+    margin-top: 2em;
+    font-size: 1.5em;
+    padding: 0.5em;
+  }
+  .work-fluid .work h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+  .scenarij .scenarij_blocks .kov2 {
+    bottom: -20%;
+    left: 79%;
+  }
+  .zakaz .block_zakaz .bird_img {
+    right: 40%;
+    top: 82%;
+  }
+  .uslugi table.button {
+    font-size: 17px;
+    padding: 4px 3px;
+  }
 }
