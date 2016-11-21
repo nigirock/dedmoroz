@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".popup").magnificPopup();
-    $("#mask").inputmask({
+    $("#mask, #mask1, #mask2, #mask3").inputmask({
         "mask":"+375 (99) 999-9999"
     });
 
@@ -32,21 +32,63 @@ $(document).ready(function () {
         console.log(caption);
     });
 
-    var btn = $('.button');
 
-    function Test() {
-        window.d = $(btn).data('date');
-    }
-    btn.on('click',Test);
-    Test();
-    console.log(d);
+    var text = $('#text-input'),
+        box = $('.my-checkbox');
+    box.on('click change', function() {
+        var values = [];
+        box.filter(':checked').each(function() {
+            values.push(this.value);
+        });
+        console.log((this.value));
+        text.val(values.join(','));
+        $("#form_usluga").submit(function() {
+            $.ajax({
+                type: "POST",
+                url: "mail.php",
+                data: $(this).serialize()
+            }).done(function() {
+                setTimeout(function() {
+                    $.magnificPopup.close();
+                    $('.bs-example-modal-sm').modal();
+                    $("#form_usluga").trigger("reset");
+                }, 500);
+
+            });
+            return false;
+        });
+    });
+
+    var btn = $('.button');
+    btn.on('click',function () {
+        var d = $(this).data('date');
+        var dis = $('.text_disabled');
+        dis.val(d);
+        $("#form").submit(function() {
+            $.ajax({
+                type: "POST",
+                url: "mail.php",
+                data: $(this).serialize()
+            }).done(function() {
+                setTimeout(function() {
+                    $.magnificPopup.close();
+                    $('.bs-example-modal-sm').modal();
+                    $("#form").trigger("reset");
+                }, 500);
+
+            });
+            return false;
+        });
+    });
 
 
     //Аякс отправка форм
     //Документация: http://api.jquery.com/jquery.ajax/
-    $("#form").submit(function() {
-     /*   var formID = $(this).attr('id');
-        var formNm = $('#' + formID);*/
+    $("#form_otzivi").submit(function() {
+        $('#input-id').on('rating.change', function(event, value, caption) {
+            console.log(value);
+            console.log(caption);
+        });
         $.ajax({
             type: "POST",
             url: "mail.php",
@@ -55,7 +97,22 @@ $(document).ready(function () {
             setTimeout(function() {
                 $.magnificPopup.close();
                 $('.bs-example-modal-sm').modal();
-                $("#form").trigger("reset");
+                $("#form_otzivi").trigger("reset");
+            }, 500);
+
+        });
+        return false;
+    });
+    $("#form1,#form2,#form3").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: $(this).serialize()
+        }).done(function() {
+            setTimeout(function() {
+                $.magnificPopup.close();
+                $('.bs-example-modal-sm').modal();
+                $("#form1,#form2,#form3").trigger("reset");
             }, 500);
 
         });

@@ -73,6 +73,15 @@
 .modal{
   color: #000;
 }
+.checkbox{
+  label{
+    font-size: 2em;
+    line-height: 1em;
+    &:hover{
+      text-shadow: 2px 1px 2px rgba(0,0,0,0.9);
+    }
+  }
+}
 /* ========================= start ========================*/
 body{
   color: #fff;
@@ -465,8 +474,19 @@ table{
     font-size: 25px;
     padding: 0 55px;
     .bg_transparent_white(0.4);
+    &:focus{
+      color: #fff;
+      background: @color_red_main;
+      border: 5px solid #fff;
+      outline: none;
+    }
+    &:active{
+      color: #fff;
+      background: @color_red_main;
+      border: 5px solid #fff;
+    }
   }
-  button{
+  a{
     color: #000;
     &:hover{
       color: #fff;
