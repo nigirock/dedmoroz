@@ -73,7 +73,7 @@ body {
 }
 .phone {
   font-family: 'Kelly Slab', cursive;
-  font-size: 1.5em;
+  font-size: 2.5em;
   font-weight: bold;
   -webkit-text-shadow: -1px -1px 0px #000;
   -moz-text-shadow: -1px -1px 0px #000;
@@ -698,6 +698,8 @@ form .soc_seti .btn:hover {
   }
   .zakaz .zakaz_btn {
     margin-top: 2em;
+    font-size: 21px;
+    padding: 0 6px;
   }
   .zakaz .block_zakaz .bird_img {
     right: -10%;
@@ -722,6 +724,9 @@ form .soc_seti .btn:hover {
   }
   .phone {
     font-size: 2.5em;
+  }
+  .border_bl {
+    border-bottom: 1px solid #fff;
   }
   #scene {
     display: none;
@@ -799,6 +804,9 @@ form .soc_seti .btn:hover {
     margin-top: 2em;
     font-size: 1.5em;
     padding: 0.5em;
+  }
+  .border_bl {
+    border-bottom: 1px solid #fff;
   }
   .work-fluid .work h2 {
     font-size: 2.5em;
